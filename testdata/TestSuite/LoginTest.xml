@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2qa" name="i2qa">
+ <component desc="OCM test" name="i2up">
+  <casefile classname="info2soft.qa.auto.test.LoginTest" desc="enable test standalone" name="enable Account Standalone" sequent="true">
+   <case name="loginTest" desc="List account" />
+   <case name="enterSummaryPage" desc="验证总览和导航页面打开和显示正确" />
+<!--    <case name="enterSysParaManage" desc="验证系统参数页面正确" />
+   <case name="updateSysParas" desc="验证修改全局设置正确" />
+   <case name="enterNodeManage" desc="验证节点管理页面打开正确" />
+   <case name="createNode" desc="验证新建节点正确" />
+   <case name="enterLicenseManage" desc="验证许可管理页面打开正确" />
+   <case name="addLicense" desc="验证添加许可正确" />
+-->   <case name="enterRuleManage" desc="验证访问复制规则正确" />
+   <case name="createCopyRules" desc="验证新建规则正确" />
+   <case name="enterToolManage" desc="验证比较同步页面正确" />
+   <case name="createCompareRules" desc="验证比较规则正确" />
+  </casefile>
+  <subcomp name="i2Service"/>
+  <area name="Service"/>
+ </component>
+</suite>

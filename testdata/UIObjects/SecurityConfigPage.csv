@@ -1,0 +1,6 @@
+info2soft.qa.auto.pageobject.SecurityConfigPage.ToggleDiv,xpath,//div[@id='tab-1']
+info2soft.qa.auto.pageobject.SecurityConfigPage.trueRadio,xpath,//span[@class='el-radio__input']/span[@class='el-radio__inner']
+#info2soft.qa.auto.pageobject.SecurityConfigPage.trueRadio,xpath,//label[contains(@class='el-radio is-checked')]/span[contains(@class='el-radio__inner')]/span
+#info2soft.qa.auto.pageobject.SecurityConfigPage.falseRadio,xpath,//div[@id="pane-1"]/div/form/div[3]/div/div/label[2]/span[1]/span
+info2soft.qa.auto.pageobject.SecurityConfigPage.falseRadio,xpath,//span[@class='el-radio__input is-checked']/span[@class='el-radio__inner']
+info2soft.qa.auto.pageobject.SecurityConfigPage.Button,xpath,//div[@id="pane-1"]/div/form/div[6]/div/button/span

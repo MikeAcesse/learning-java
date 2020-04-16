@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="i2up">
+	<component desc="Coopy rule test" name="Coopy Rule of i2up">
+		<casefile classname="info2soft.qa.auto.test.CopyRuleTest"
+			desc="test copy rule" name="testCopyRule"
+			runafter="testCompareRuleFeature"
+			data="testdata/inputData/i2coopy/coopy.properties">
+	        <case name="testSynDirectory" desc="test sysnchronize directory" />
+		    <case name="testMoveDirectory" desc=" test move directory " />
+			<case name="testMD5SynFiles" desc="test sysnchronize file and verify it by md5." />
+			<case name="testCommonSynFiles"	desc="test sysnchronize file and verify it by common way" />
+			<case name="testDeleteFile"	desc="test delete file on the source side" />
+			<case name="testSynchronizeBigFile" desc="test big file" />
+			<case name="testRemirrorByMD5" desc="test big file for mirror" />
+			<case name="testRemirrorByTimeVerify" desc="test big file for mirror" />
+			<case name="testDeleteBigFileOnBackupSide" desc=" when delete a above 4G file on the backup side ,i2up synchronize a deleted file from source side to backup side" />
+			<case name="testWriteFileDuringMirror" desc=" When a copy rule is mirrored, the files in the monitor directory are written" />
+		</casefile> 
+		<subcomp name="i2Service" />
+		<area name="Service" />
+	</component>
+</suite>

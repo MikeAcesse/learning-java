@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="copyRuleAutomationTest">
+    <component desc=" base test for copy rule. "
+               name="baseTest">
+        <!--   查看日志   -->
+        <casefile classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleLogTest"
+                  desc="test log  in a copy rule." name="copyRuleLogTest"
+                  data="testdata/inputData/CopyRuleBaseTest/baseTest.properties">
+            <case name="testCopyRuleLog_lastPage" desc="i2-11953:复制规则-查看日志-最后一页"/>
+            <case name="testCopyRuleLog_firstPage" desc="i2-11952:复制规则-查看日志-第一页"/>
+            <case name="testCopyRuleLog_eachPageTenArticle" desc="i2-11951:复制规则-查看日志-10条/页"/>
+            <case name="testCopyRuleLog_recentlyDay" desc="i2-11949:复制规则-查看日志-最近一天"/>
+            <case name="testCopyRuleLog_recentlyWeek" desc="i2-11948:复制规则-查看日志-最近一周"/>
+            <case name="testCopyRuleLog_logGradeAll" desc="i2-11947:复制规则-查看日志-日志等级:所有"/>
+            <case name="testCopyRuleLog_logGradeWarn" desc="i2-11946:复制规则-查看日志-日志等级:警告"/>
+            <case name="testCopyRuleLog_logGradeError" desc="i2-11945:复制规则-查看日志-日志等级:错误"/>
+            <case name="testCopyRuleLog_logGradeNormal" desc="i2-11944:复制规则-查看日志-日志等级:正常"/>
+            <case name="testCopyRuleLog_defaultSetting" desc="i2-11943:复制规则-查看日志-默认设置"/>
+            <case name="testCopyRuleLogDefaultSet" desc="i2-11443:复制规则-日志-默认设置"/>
+            <case name="testCopyRuleLogGradeNormal" desc="i2-11444:复制规则-日志-正常"/>
+            <case name="testCopyRuleLogGradeError" desc="i2-11491:复制规则-日志-错误"/>
+            <case name="testCopyRuleLogGradeWarn" desc="i2-11492:复制规则-日志-警告"/>
+            <case name="testCopyRuleLogGradeAll" desc="i2-11492:复制规则-日志-所有"/>
+            <case name="testCopyRuleLogLatelyWeek" desc="i2-11496:复制规则-日志-日志等级:最近一周"/>
+            <case name="testCopyRuleLogLatelyDay" desc="i2-11499:复制规则-日志-日志等级:最近一天"/>
+            <case name="testCopyRuleLogLatelyOneMonth" desc="i2-11500:复制规则-日志-日志等级:最近一个月"/>
+            <case name="testCopyRuleLogLatelyThreeMonth" desc="i2-11501:复制规则-日志-日志等级:最近三个月"/>
+            <case name="testCopyRuleLogDefault" desc="i2-11501:复制规则-日志-默认"/>
+            <case name="testCopyRuleLog_10Article" desc="i2-11501:复制规则-日志-10条/页"/>
+            <case name="testCopyRuleLog_15Article" desc="i2-11501:复制规则-日志-15条/页"/>
+            <case name="testCopyRuleLog_20Article" desc="i2-11501:复制规则-日志-20条/页"/>
+            <case name="testCopyRuleLog_30Article" desc="i2-11501:复制规则-日志-30条/页"/>
+            <case name="testCopyRuleLog_100Article" desc="i2-11501:复制规则--日志-100条/页"/>
+            <case name="testCopyRuleBaseInfoHide" desc="i2-11520:复制规则-基本信息的隐藏"/>
+            <case name="testCopyRuleBaseInfoUnfold" desc="i2-11518:复制规则-基本信息的展开"/>
+
+        </casefile>
+
+        <!--   带宽控制  -->
+        <casefile classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithBrandWidthControl"
+                  desc="test brand Width control tabs in a copy rule." name="copyRuleWithBrandWidthConfig"
+                  data="testdata/inputData/CopyRuleBaseTest/baseTest.properties">
+
+            <case name="testCopyRuleEditBandWidth_0" desc="i2-11911:复制规则-修改-带宽控制-0Mps"/>
+            <case name="testCopyRuleEditBandWidth_8" desc="i2-11912:复制规则-修改-带宽控制-8Mps"/>
+            <case name="testCopyRuleEditBandWidthControl" desc="i2-11866:复制规则-修改-复制规则在复制状态-带宽控制"/>
+            <case name="testCopyRuleAddBandWidth_8" desc="i2-11128:创建复制规则-带宽控制-8Mps"/>
+            <case name="testCopyRuleAddBandWidth_0" desc="i2-11128:创建复制规则-带宽控制-0Mps"/>
+        </casefile>
+
+        <!--   路径设置  -->
+        <casefile
+                classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithPathSettings"
+                desc="test path settings tabs in a copy rule."
+                data="testdata/inputData/CopyRuleBaseTest/baseTest.properties"
+                name="copyRuleWithPathSettings">
+
+            <case name="testCreateCopyRuleWithoutFilesAndDirectory"
+                  desc="i2-11101: 创建复制规则-不要复制的目录和文件"/>
+            <case name="testCreateCopyRuleWithMirrorTypeOneToOne"
+                  desc="i2-11331: 创建复制规则-映射类型-一对一"/>
+            <case name="testModifyCopyRuleWithNewBackupSidePath"
+                  desc="i2-11332：创建复制规则-映射类型-一对一-更改备端路径"/>
+
+        </casefile>
+
+        <!--  孤儿文件 -->
+        <casefile
+                classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithOrphanFiles"
+                desc="test orphan files tabs in a copy rule."
+                data="testdata/inputData/CopyRuleBaseTest/baseTest.properties"
+                name="copyRuleWithOrphanFiles">
+
+            <case name="testCreateCopyRuleWithNoProcessOrphanFiles"
+                  desc="i2-11123:创建复制规则-孤儿文件不做处理"/>
+            <case name="testCreateCopyRuleWithDeleteOrphanFiles"
+                  desc="i2-11124:创建复制规则-孤儿文件删除"/>
+            <case name="testCreateCopyRuleWithMovingToDirectory"
+                  desc="i2-11125:创建复制规则-孤儿文件移动到指定路径"/>
+            <case name="testCreateCopyRuleWithMoveToDirectoryAndArchive"
+                  desc="i2-11126:创建复制规则-孤儿文件移动到指定路径，并归档"/>
+            <case name="testCheckOrphanFileWithNoProcess"
+                  desc="i2-11978 复制规则-查看孤儿文件列表-不处理孤儿文件"/>
+            <case name="testCheckOrphanFileDeleteOrphanFiles"
+                  desc="i2-11977:复制规则-查看孤儿文件列表-删除孤儿文件"/>
+            <case name="testCheckOrphanFileMoveToDirectoryAndArchive"
+                  desc=" i2-11976:复制规则-查看孤儿文件列表-孤儿文件移到目录并归档"/>
+            <case name="testCheckOrphanFileMoveToDirectory"
+                  desc="i2-11975:复制规则-查看孤儿文件列表-孤儿文件移到目录"/>
+            <case name="testModifyOrphanFileWithNoProcess"
+                  desc=" i2-11907:复制规则-修改-孤儿文件不做处理"/>
+            <case name="testModifyOrphanFileDeleteOrphanFiles"
+                  desc=" i2-11908:复制规则-修改-孤儿文件删除"/>
+            <case name="testModifyOrphanFileMoveToDirectory"
+                  desc="i2-11909:复制规则-修改-孤儿文件移动到指定路径"/>
+            <case name="testModifyOrphanFileMoveToDirectoryAndArchive"
+                  desc="  i2-11910:复制规则-修改-孤儿文件移动到指定路径，并归档"/>
+        </casefile>
+
+        <!--镜像设置-->
+        <casefile classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithMirrorSettings"
+                  desc="test mirror settings tabs in a copy rule." name="copyRuleWithMirrorSettings"
+                  data="testdata/inputData/CopyRuleBaseTest/baseTest.properties">
+
+            <case name="testCopyRuleErrorWritingLogAndContinuing_sync" desc="i2-11896:创建复制规则-遇到错误，写入日志并继续同步-镜像状态"/>
+            <case name="testCopyRuleErrorStop_sync" desc="i2-11895:创建复制规则-遇到错误，立即停止同步-复制状态"/>
+            <case name="testCopyRuleStrictCheck" desc="i2-11894:创建复制规则-严格校验-复制状态"/>
+            <case name="testCopyRuleTimeCheck" desc="i2-11893:创建复制规则-时间校验-复制状态"/>
+            <case name="testCopyRuleFileAttributeSync_mirror" desc="i2-11898:创建复制规则-文件属性同步-镜像状态"/>
+            <case name="testCopyRuleFileAttributeNotSync_mirror" desc="i2-11897:创建复制规则-文件属性不同步-镜像状态"/>
+            <case name="testCreateCopyRuleWithTimeVerify"
+                  desc="i2-11102: 创建复制规则-时间校验"/>
+            <case name="testCreateCopyRuleWithMd5Verify"
+                  desc="i2-11103:创建复制规则-严格校验"/>
+            <case name="testCopyRuleEditMirrorStrictCheck" desc="i2-11874:复制规则-修改-复制规则在停止状态-校验方式：严格校验"/>
+            <case name="testCopyRuleEditMirrorTimeCheck" desc="i2-11873:复制规则-修改-复制规则在停止状态-校验方式：时间校验"/>
+            <case name="testCopyRuleEditSyncFileAttributeSecurity" desc="i2-11883:复制规则-修改-复制规则在停止状态-同步文件安全属性"/>
+            <case name="testCopyRuleEditNotSyncFileAttributeSecurity" desc="i2-11881:复制规则-修改-复制规则在停止状态-不同步文件安全属性"/>
+            <case name="testCopyRuleEditErrorStopSync" desc="i2-11877:复制规则-修改-复制规则在停止状态-遇到错误，立即停止同步"/>
+            <case name="testCopyRuleEditErrorWriteInLogContinueSync" desc="i2-11875:复制规则-修改-复制规则在停止状态-遇到错误，写入日志并继续同步"/>
+            <case name="testCopyBatchEditTimeCheck" desc="i2-11553:复制规则-批量修改-复制规则在停止状态-时间校验"/>
+            <case name="testCopyBatchEditStrictCheck" desc="i2-11556:复制规则-批量修改-复制规则在停止状态-严格校验"/>
+            <case name="testCopyRuleBatchEditErrorWriteInLogContinueSync"
+                  desc="i2-11569:复制规则-批量修改-复制规则在停止状态-遇到错误，写入日志并继续同步"/>
+            <case name="testCopyRuleBatchEditErrorWriteInLogStopSync"
+                  desc="i2-11579:复制规则-批量修改-复制规则在停止状态-遇到错误，立即停止同步"/>
+            <case name="testCopyRuleBatchEditFileOpenModeAutoSelect" desc="i2-11584:复制规则-批量修改-复制规则在停止状态-文件打开方式：自动选择"/>
+            <case name="testCopyRuleBatchEditFileAttributesNoSync" desc="i2-11592:复制规则-批量修改-复制规则在停止状态-文件安全属性：不同步"/>
+            <case name="testCopyRuleBatchEditFileAttributesSync" desc="i2-11594:复制规则-批量修改-复制规则在停止状态-文件安全属性：同步"/>
+            <case name="testCopyRuleAddFileAttributesNotSync" desc="i2-11111:创建复制规则-文件属性不同步"/>
+            <case name="testCopyRuleAddFileAttributesSync" desc="i2-11107:创建复制规则-文件属性同步"/>
+            <case name="testCopyRuleAddErrorWriteInLogContinueSync" desc="i2-11105: 创建复制规则-遇到错误，写入日志并继续同步"/>
+            <case name="testCopyRuleAddErrorStopSync" desc="i2-11104:创建复制规则-遇到错误，立即停止同步"/>
+
+        </casefile>
+
+        <!--高级设置-->
+        <casefile classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithAdvancedSettings"
+                  desc="test advanced settings tabs in a copy rule." name="copyRuleWithAdvancedSettings"
+                  data="testdata/inputData/CopyRuleBaseTest/baseTest.properties">
+
+            <case name="testCopyRuleEditFilePrefix" desc="i2-11929:复制规则-修改-高级设置-文件名转换-增加前缀"/>
+            <case name="testCopyRuleEditFileSuffix" desc="i2-11930:复制规则-修改-高级设置-文件名转换-增加后缀"/>
+            <case name="testCopyRuleEditFilePrefixBanMirror" desc="i2-11938:复制规则-修改-高级设置-文件名转换-增加前缀stop-启动禁止镜像功能"/>
+            <case name="testCopyRuleEditParallelTaskNumber_8" desc="i2-11937:复制规则-修改-高级设置-文件名转换-并行任务数为8"/>
+            <case name="testCopyRuleEditParallelTaskNumber_4" desc="i2-11935:复制规则-修改-高级设置-文件名转换-并行任务数为4"/>
+            <case name="testCopyRuleEditParallelTaskNumber_2" desc="i2-11933:复制规则-修改-高级设置-文件名转换-并行任务数为2"/>
+            <case name="testCopyRuleEditBigSmallWrite_small" desc="i2-11932:复制规则-修改-高级设置-文件名转换-大小写转换转小写"/>
+            <case name="testCopyRuleEditBigSmallWrite_big" desc="i2-11931:复制规则-修改-高级设置-文件名转换-大小写转换转大写"/>
+            <case name="testCopyRuleBatchEditAdvancedSetReplicationDelayThreshold"
+                  desc="i2-11641:复制规则-批量修改-复制规则在停止状态-高级设置复制延时阈值"/>
+            <case name="testCopyRuleBatchEditDisableMirroring"
+                  desc="i2-11652:复制规则-批量修改-复制规则停止状态-高级设置-启用禁止镜像功能"/>
+            <case name="testCopyRuleBatchEditParallelTask_8"
+                  desc="i2-11651:复制规则-批量修改-复制规则停止状态-高级设置-并行任务数为8"/>
+            <case name="testCopyRuleBatchEditParallelTask_4"
+                  desc="i2-11650:复制规则-批量修改-复制规则停止状态-高级设置-并行任务数为4"/>
+            <case name="testCopyRuleBatchEditParallelTask_2"
+                  desc="i2-11647:复制规则-批量修改-复制规则停止状态-高级设置-并行任务数为2"/>
+            <case name="testCopyRuleBatchEditFileNameUpperCase"
+                  desc="i2-11646 : 复制规则-批量修改-复制规则停止状态-高级设置-文件名转换：转大写"/>
+            <case name="testCopyRuleBatchEditFileNameLowerCase"
+                  desc="i2-11645 : 复制规则-批量修改-复制规则停止状态-高级设置-文件名转换：转小写"/>
+            <case name="testCopyRuleBatchEditFileNameSuffix"
+                  desc="i2-11643 : 复制规则-批量修改-复制规则停止状态-高级设置-文件名转换：增加后缀：end"/>
+            <case name="testCopyRuleBatchEditFileNamePrefix"
+                  desc="i2-11642:复制规则-批量修改-复制规则停止状态-高级设置-文件名转换：增加前缀"/>
+            <case name="testCopyRuleAddRuleParallelTask_8" desc="i2-11139:创建复制规则-高级设置-文件名转换-并行任务数为8"/>
+            <case name="testCopyRuleAddRuleParallelTask_4" desc="i2-11138:创建复制规则-高级设置-文件名转换-并行任务数为4"/>
+            <case name="testCopyRuleAddRuleParallelTask_2" desc="i2-11137:创建复制规则-高级设置-文件名转换-并行任务数为2"/>
+            <case name="testCopyRuleAddFileNamePrefix" desc="i2-11132:创建复制规则-高级设置-文件名转换-增加前缀"/>
+            <case name="testCopyRuleAddFileNameSuffix" desc="i2-11134:创建复制规则-高级设置-文件名转换-增加后缀"/>
+            <case name="testCopyRuleAddFileNameLowercase" desc="i2-11136:创建复制规则-高级设置-文件名转换-大小写转换转小写"/>
+            <case name="testCopyRuleAddFileNameUpperCase" desc="i2-11135:创建复制规则-高级设置-文件名转换-大小写转换转大写"/>
+            <case name="testCopyRuleCopyDelayTime" desc="i2-11353:创建复制规则-复制延时阈值为-1"/>
+            <case name="testCopyRuleAddFileNamePrefixStartBanMirror" desc="i2-11140 : 创建复制规则-高级设置-文件名转换-增加前缀stop-启用禁止镜像功能"/>
+
+        </casefile>
+
+        <!--基本设置-->
+        <casefile
+                classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithBaseSettings"
+                desc="test base settings tabs in a copy rule."
+                data="testdata/inputData/CopyRuleBaseTest/baseTest.properties"
+                name="copyRuleWithBaseSettings">
+
+            <case name="testCreateCopyRule"
+                  desc="i2-11094:创建复制规则"/>
+            <case name="testCreateDuplicateCopyRule"
+                  desc="i2-11093:创建复制规则"/>
+            <case name="testCreateCopyRuleWithExcludeFileType"
+                  desc="i2-11097:创建复制规则-文件类型为排除"/>
+            <case name="testCreateCopyRuleCloseAuotStart"
+                  desc="i2-11099:创建复制规则-关闭规则自动启动"/>
+            <case name="testCreateCopyRuleWithReserveTime"
+                  desc="i2-11100:创建复制规则-预约启动和关闭规则自启动"/>
+            <case name="testStartCopyRuleOnUnknownStatus"
+                  desc="i2-11402:启动复制规则-未知状态"/>
+            <case name="testStartCopyRuleOnMirrorStatus"
+                  desc="i2-11401:启动复制规则-镜像状态"/>
+            <case name="testStartCopyRuleOnStaleStatus"
+                  desc="i2-11400:启动复制规则-失效状态"/>
+            <case name="testStartCopyRuleOnStopStatus"
+                  desc="i2-11393:启动复制规则-停止状态"/>
+            <case name="testStartCopyRuleOnReplicationStatus"
+                  desc="i2-11395:启动复制规则-复制状态"/>
+            <case name="testStopCopyRuleOnStaleStatus"
+                  desc="i2-11403:停止复制规则-失效状态"/>
+            <case name="testStopCopyRuleOnUnknownStatus"
+                  desc="i2-11389:停止复制规则-未知状态"/>
+            <case name="testStopCopyRuleOnMirrorStatus"
+                  desc="i2-11384:停止复制规则-镜像状态"/>
+            <case name="testStopCopyRuleOnReplicationStatus"
+                  desc="i2-11385:停止复制规则-复制状态"/>
+            <case name="testStartMultipleCopyRuleOnUnknownStatus"
+                  desc="i2-11398:启动多个复制规则-未知状态"/>
+            <case name="testStartMultipleCopyRuleOnStaleStatus"
+                  desc="i2-11399:启动多个复制规则-失效状态"/>
+            <case name="testStartMultipleCopyRuleOnMirrorStatus"
+                  desc="i2-11397:启动多个复制规则-镜像状态"/>
+            <case name="testStartMultipleCopyRuleOnReplicationStatus"
+                  desc="i2-11396:启动多个复制规则-复制状态"/>
+            <case name="testStartMultipleCopyRuleOnStopStatus"
+                  desc="i2-11394:启动多个复制规则-停止状态"/>
+            <case name="testStopMultipleCopyRuleOnUnknownStatus"
+                  desc="i2-11391:停止多个复制规则-未知状态"/>
+            <case name="testStopMultipleCopyRuleOnStaleStatus"
+                  desc="i2-11404:停止多个复制规则-失效状态"/>
+            <case name="testStopMultipleCopyRuleOnMirrorStatus"
+                  desc="i2-11387:停止多个复制规则-镜像状态"/>
+            <case name="testStopMultipleCopyRuleOnReplicationStatus"
+                  desc="i2-11388:停止多个复制规则-复制状态"/>
+            <case name="testStopMutipleCopyRuleOnStopStatus"
+                  desc="i2-11390:停止多个复制规则-停止状态"/>
+            <case name="testCreateCopyRuleWithContainsFileType"
+                  desc=" i2-11327:创建复制规则-文件类型为包含"/>
+            <case name="testCreateCopyRuleCloseMirrorAuotStart"
+                  desc=" i2-11328:创建复制规则-关闭镜像自启动"/>
+            <case name="testCreateCopyRuleWithReserveTimeToVerifyMirror"
+                  desc=" i2-11329:创建复制规则-预约启动和关闭规则自启动-预约时间为20分钟后"/>
+            <case name="testDeleteCopyRuleWithNoSelect"
+                  desc=" i2-11441:删除复制规则-不选择复制规则"/>
+            <case name="testCopyRuleEditOpenBookingRuleAutoStart"
+                  desc=" i2-11870:复制规则-修改-复制规则在停止状态-预约规则自动启动"/>
+            <case name="testCopyRuleEditCloseBookingRuleAutoStart"
+                  desc=" i2-11869:复制规则-修改-复制规则在停止状态-关闭规则自动启动"/>
+            <case name="testCopyRuleEditFileTypeInclude"
+                  desc=" i2-11868:复制规则-修改-复制规则在停止状态-文件类型为包含"/>
+            <case name="testCopyRuleEditFileTypeExclude"
+                  desc=" i2-11867:复制规则-修改-复制规则在停止状态-文件类型为排除"/>
+            <case name="testStopCopyRuleOnStopStatus"
+                  desc="i2-11386: 停止复制规则-停止状态"/>
+
+        </casefile>
+
+        <!--CDP 设置-->
+        <casefile
+                classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithCDPSettings"
+                desc="test cdp settings tabs in a copy rule."
+                data="testdata/inputData/CopyRuleBaseTest/baseTest.properties"
+                name="copyRuleWithCDPSettings">
+            <case name="testCreateCopyRuleWithCdp"
+                  desc="i2-11115:创建复制规则-CDP"/>
+            <case name="testCreateCopyRuleWithCdp_CreateTranscript"
+                  desc="i2-11120:创建复制规则-CDP-创建副本"/>
+            <case name="testCreateCopyRuleWithCdp_Packaged"
+                  desc="i2-11121:创建复制规则-CDP-打包"/>
+            <case name="testCreateCopyRuleWithCdp_GenerationStrategy"
+                  desc="  i2-11122: 创建复制规则-CDP-生成策略"/>
+            <case name="testModifyCopyRuleWithCdp"
+                  desc="i2-11903:复制规则-修改-打开CDP"/>
+            <case name="testModifyCopyRuleWithCdp_CreateTranscript"
+                  desc=" i2-11904:复制规则-修改-CDP-创建副本"/>
+            <case name="testModifyCopyRuleWithCdp_Packaged"
+                  desc="i2-11905:复制规则-修改-CDP-打包"/>
+            <case name="testModifyCopyRuleWithCdp_GenerationStrategy"
+                  desc=" i2-11906:复制规则-修改-CDP-生成策略"/>
+            <case name="testBatchMoidifyCopyRuleWith_SaveDays"
+                  desc="i2-11630:复制规则-批量修改-复制规则在停止状态-CDP保留天数为10"/>
+            <case name="testBatchMoidifyCopyRuleWith_RetainNumber"
+                  desc="i2-11631:复制规则-批量修改-复制规则在停止状态-CDP保留个数为10"/>
+            <case name="testBatchModifyCopyRuleWithCdp_CreateTranscript"
+                  desc="i2-11633:复制规则-批量修改-复制规则在停止状态-CDP中Baseline创建副本"/>
+            <case name="testBatchModifyCopyRuleWithCdp_MultipleGenerationStrategy"
+                  desc=" i2-11636:复制规则-批量修改-复制规则在停止状态-CDP中Baseline创建多个策略"/>
+
+        </casefile>
+
+        <!--比较计划-->
+        <casefile
+                classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithComparePlan"
+                desc="test cdp settings tabs in a copy rule."
+                data="testdata/inputData/CopyRuleBaseTest/baseTest.properties"
+                name="copyRuleWithComparePlan">
+
+            <case name="testCopyRuleEditTimeCheck" desc="i2-11928:复制规则-修改-比较计划-时间校验"/>
+            <case name="testCopyRuleEditStrictCheck" desc="i2-11927:复制规则-修改-比较计划-严格校验"/>
+            <case name="testCopyRuleBatchEditStrictCheck" desc="i2-11639 : 复制规则-批量修改-复制规则在停止状态-比较计划：严格校验"/>
+            <case name="testCopyRuleBatchEditTimeCheck" desc="i2-11640 : 复制规则-批量修改-复制规则在停止状态-比较计划：时间校验"/>
+            <case name="testCopyRuleAddTimeCheck" desc="i2-11130:创建复制规则-比较计划-时间校验"/>
+            <case name="testCopyRuleAddStrictCheck" desc="i2-11129:创建复制规则-比较计划-严格校验"/>
+            <case name="testCopyRuleRemoveBatchCopyRule_copy" desc=" i2-11433: 删除多个复制规则-规则分别处于复制状态"/>
+            <case name="testCopyRuleRemoveBatchCopyRule_mirror" desc=" i2-11434: 删除多个复制规则-规则分别处于镜像状态"/>
+            <case name="testCopyRuleRemoveBatchCopyRule_loseEfficacy" desc="i2-11435: 删除多个复制规则-规则分别处于失效状态"/>
+            <case name="testCopyRuleRemoveBatchCopyRule_unknown" desc="i2-11436: 删除多个复制规则-规则分别处于未知状态"/>
+            <case name="testCopyRuleRemoveBatchCopyRule_unknownDelBk" desc="i2-11436: 删除多个复制规则-规则分别处于未知状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveBatchCopyRule_loseEfficacyDelBk" desc="i2-11437: 删除多个复制规则-规则分别处于失效状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveBatchCopyRule_copyDelBk" desc="i2-11438: 删除多个复制规则-规则分别处于复制状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveBatchCopyRule_mirrorDelBk" desc="i2-11439:删除多个复制规则-规则分别处于镜像状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveRuleStop_delBk" desc="i2-11418:删除复制规则-停止状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveRuleLoseEfficacy_delBk" desc="i2-11417:删除复制规则-失效状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveRuleUnknown_delBk" desc="i2-11416:删除复制规则-未知状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveRuleCopy_delBk" desc="i2-11412:删除复制规则-复制状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveRuleMirror_delBk" desc="i2-11411: 删除复制规则-镜像状态-删除备端数据"/>
+            <case name="testCopyRuleRemoveRuleStop" desc="i2-11415:删除复制规则-停止状态"/>
+            <case name="testCopyRuleRemoveRuleLoseEfficacy" desc="i2-11414:删除复制规则-失效状态"/>
+            <case name="testCopyRuleRemoveRuleUnknown" desc="i2-11413:删除复制规则-未知状态"/>
+            <case name="testCopyRuleRemoveRuleCopy" desc="i2-11410:删除复制规则-复制状态"/>
+            <case name="testCopyRuleRemoveRuleMirror" desc=" i2-11408:删除复制规则-镜像状态"/>
+
+        </casefile>
+
+        <subcomp name="i2Service"/>
+        <area name="Service"/>
+    </component>
+</suite>

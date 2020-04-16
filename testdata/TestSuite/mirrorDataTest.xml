@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="i2up_nodeManagement">
+    <component desc=" test sfs automation tset " name="sfs">
+        <casefile classname="info2soft.qa.auto.test.copyrule.mirrorDataTest"
+                  desc="test sfs function"
+                  data="testdata/inputData/CopyRuleBaseTest/baseTest.properties"
+                  name="mirrorDataTest">
+            <case name="testCopyRuleSingleBigFile" desc="i2-6752:单个大文件" />
+            <case name="testCopyRuleSingleBigFile_anewMirror" desc="i2-6757:单个大文件" />
+            <case name="testCopyRuleSmallFiles" desc="i2-6753:海量小文件" />
+            <case name="testCopyRuleSmallFiles_anewMirror" desc="i2-6758:海量小文件" />
+
+        </casefile>
+        <subcomp name="i2Service"/>
+        <area name="Service"/>
+    </component>
+</suite>

@@ -1,0 +1,18 @@
+screenshot=ERROR
+timeout=43200
+selenium_version=3
+selenium_server=localhost
+selenium_port=%selenium_port%
+locale=en_us
+browser=*chrome
+firefoxTemplate=/systemtests/auto/profile
+chrome_binary=/bin/google-chrome
+chrome_driver=/home/package/i2up/common/chromedriver
+geckodriver_path=/systemtests/geckodriver
+use_geckodriver=true
+classpath=/home/package/i2up/common/lib:/home/package/i2up/results/compiled
+sourcepath=/home/package/i2up/src
+chrome.options=--headless --no-sandbox --disable-gpu --disable-extensions --disable-dev-shm-usage --proxy-pac-url=http://info2soft.com:8080/routing.pac
+concurrency=1
+#running_context_provider=info2soft.qa.VNCRunningContextProvider
+#video=None

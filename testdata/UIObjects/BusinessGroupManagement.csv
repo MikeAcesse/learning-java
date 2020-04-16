@@ -1,0 +1,1 @@
+info2soft.qa.auto.pageobject.BusinessGroupManagementPage.cascaderDropDownDiv,xpath,//div[contains(@class,'el-cascader__dropdown')]

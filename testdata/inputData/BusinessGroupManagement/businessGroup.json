@@ -1,0 +1,166 @@
+{
+    "Node":
+        {
+            "node1": 
+                {
+                    "port": "26821",
+                    "user": "root",
+                    "pwd": "123456",
+                    "license": "coopy",
+                    "includePath":"/",
+                    "note": "node1 xyz"
+                },
+            "node2":
+                {
+                    "port": "26821",
+                    "user": "root",
+                    "pwd": "123456",
+                    "license": "coopy",                    
+                    "includePath":"/", 
+                    "note": "node2 xyz"
+                }
+        },
+    "CopyRule":
+        {
+            "cr1":
+                {
+                    "srcNode": "node1",
+                    "backupNode": "node2",
+                    "mapType": "多对一",
+                    "srcDir": "/root/work/test/monitor/",
+                    "backupDir": "/root/work/test/monitor/backup/",
+                    "unmonitoredDir":"/root/work/test/unmonitor/"
+                },
+             "cr2":
+                {
+                    "srcNode": "node1",
+                    "backupNode": "node2",
+                    "mapType": "一对一",
+                    "srcDir": "/root/work/test/monitor/",
+                    "backupDir": "/root/work/test/monitor/backup/",
+                    "unmonitoredDir":"/root/work/test/unmonitor/"
+                },
+            "copyRule2":
+            {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor/",
+                "backupDir": "/root/work/test/monitor/backup/",
+                "unmonitoredDir":"/root/work/test/unmonitor/"
+            },
+            "aaaatest2": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor2/",
+                "backupDir": "/root/work/test/monitor/backup2/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "aaa": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor3/",
+                "backupDir": "/root/work/test/monitor/backup3/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test1": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor1/",
+                "backupDir": "/root/work/test/monitor11bk/backup1/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test2": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor2/",
+                "backupDir": "/root/work/test/monitor22bk/backup2/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test3": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor3/",
+                "backupDir": "/root/work/test/monitor33bk/backup3/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test4": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor4/",
+                "backupDir": "/root/work/test/monitor44bk/backup4/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test21": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor21/",
+                "backupDir": "/root/work/test/monitor21bk/backup/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test22": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor22/",
+                "backupDir": "/root/work/test/monitor22bk/backup/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test23": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor23/",
+                "backupDir": "/root/work/test/monitor23bk/backup/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test31": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor31/",
+                "backupDir": "/root/work/test/monitor31bk/backup/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test32": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor32/",
+                "backupDir": "/root/work/test/monitor32bk/backup/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            },
+            "test33": {
+                "srcNode": "node1",
+                "backupNode": "node2",
+                "mapType": "一对一",
+                "srcDir": "/root/work/test/monitor33/",
+                "backupDir": "/root/work/test/monitor33bk/backup/",
+                "unmonitoredDir": "/root/work/test/unmonitor/"
+            }
+        },
+    "CompareRule":
+        {    
+              "compareRule1":
+                {
+                    "srcNode": "node1",
+                    "backupNode": "node2",
+                    "srcDir": "/root/work/test/monitor/",
+                    "backupDir": "/root/work/test/monitor/backup/"
+                },
+              "compareRule2":
+                {
+                    "srcNode": "node1",
+                    "backupNode": "node2",
+                    "srcDir": "/root/work/test/monitor/",
+                    "backupDir": "/root/work/test/monitor/backup/"
+                }
+         }    
+}

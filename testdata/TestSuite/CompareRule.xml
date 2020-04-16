@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="i2up_compareRule">
+	<component desc="OCM test" name="Compare Rule of i2up">
+		<casefile classname="info2soft.qa.auto.test.CompareRuleTest"
+			desc="test compare rule function"
+			data="testdata/inputData/comparetools/comparerule.properties"
+			name="test compare rule feature">
+          	<case name="testTotalFileSize" desc=" test total size of the files " />
+			<case name="testTotalNumberOfFiles"	desc=" test total number of the files" />
+			<case name="testMd5ValueOfFiles" desc=" test total md5value of the files" />
+			<case name="testFilesTime" desc=" test the time of all the files" />
+		   	<case name="testCreateCompareRuleWithBusinessGroup" desc="i2-11235:创建一致性比较业务组"/>
+		    <case name="testCreateCompareRuleWithoutNetworkInbk" desc= "i2-11197:创建一致性比较-备端网络不通"/>
+			<case name="testCreateCompareRule" desc= "创建一致性比较"/>
+			<case name="testCompareRuleByMD5BakNoData" desc= "i2-11200:创建一致性比较-源端fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompareRuleByMD5SameData" desc= "i2-11203:创建一致性比较-源端数据为fileopr生成的数据-备端有相同的数据"/>
+			<case name="testCompareRuleByMD5MissingBakData" desc= "i2-11204:创建一致性比较-源端数据为fileopr生成的数据-备端缺失一部分文件"/>
+			<case name="testCompareRuleByMD5OverwriteSrcData" desc= "i2-11206:创建一致性比较-源端数据为fileopr生成的数据-源端数据覆盖"/>
+		    <case name="testCompareRuleByBakNoData" desc= "i2-11208:创建一致性比较-文件大小+文件修改时间-源端fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompareRuleBySameData" desc= "i2-11210:创建一致性比较-文件大小+文件修改时间-源端fileopr生成数据-备端有相同数据"/>
+			<case name="testCompareRuleByMissingBakData" desc= " i2-11211:创建一致性比较-文件大小+文件修改时间-源端fileopr生成数据-备端缺失一部分文件"/>
+			<case name="testCompareRuleByOverwriteSrcData" desc= "i2-11213:创建一致性比较-文件大小+文件修改时间-源端数据为fileopr生成的数据-源端数据覆盖"/>
+			<case name="testCompareRuleAutoSyncWithBakNoData" desc= "i2-11236:创建一致性比较-自动从工作机同步到灾备机-源端fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompareRuleAutoSyncWithSameData" desc= "i2-11237:创建一致性比较-自动从工作机同步到灾备机-源端fileopr生成的数据-备端有相同的数据"/>
+			<case name="testCompareRuleAutoSyncWithMissingBakData" desc="i2-11238:创建一致性比较-自动从工作机同步到灾备机-源端为fileopr生成的数据-备端缺失一部分文件"/>
+			<case name="testCompareRuleAutoSyncWithOverwriteSrcData" desc="i2-11240:创建一致性比较-自动从工作机同步到灾备机-源端数据为fileopr生成的数据-源端数据覆盖"/>
+			<case name="testCompareRuleAutoSyncZipZero"
+				  desc="i2-12075:创建一致性比较-自动从工作机同步到灾备机，压缩等级为0-源端数据为fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompareRuleAutoSyncZipOne"
+				  desc="i2-11242:创建一致性比较-自动从工作机同步到灾备机，压缩等级为1-源端数据为fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompareRuleAutoSyncZipTwo"
+				  desc="i2-11243:创建一致性比较-自动从工作机同步到灾备机,压缩等级为2-源端数据为fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompareRuleAutoSyncZipThree"
+				  desc="i2-11244:创建一致性比较-自动从工作机同步到灾备机,压缩等级为3-源端数据为fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompareRuleAutoSyncZipFour"
+				  desc="i2-11245:创建一致性比较-自动从工作机同步到灾备机,压缩等级为4-源端数据为fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompAutoSyncOrphanNoHanding" desc="i2-11247:创建一致性比较-自动从工作机同步到备机，孤儿文件处理方式是不处理，源端数据为fileopr生成"/>
+			<case name="testCompAutoSyncOrphanDelete" desc="i2-11247:创建一致性比较-自动从工作机同步到备机，孤儿文件处理方式：删除，源端数据为fileopr生成的数据"/>
+			<case name="testCompareRuleWorkSyncBackupAdvanced_CopyOpenAdvanced"
+				  desc="i2-13557:创建一致性比较-自动从工作机同步到灾备机-高级设置-备端有一部分数据（复制规则开高级设置）"/>
+			<case name="testCompareRuleWorkSyncBackupAdvanced_CopyNotAdvanced"
+				  desc="i2-11266:i2-11266:创建一致性比较-自动从工作机同步到灾备机-高级设置-备端有一部分数据（复制规则不开高级设置）"/>
+			<case name="testCompareRuleWorkSyncBackupAdvanced_userCustom"
+				  desc="i2-11265:创建一致性比较-自动从工作机同步到灾备机-高级设置：用户自定义"/>
+			<case name="testCompareRuleWorkSyncBackupAdvanced_turnToLowercase" desc="i2-11258:创建一致性比较-自动从工作机同步到灾备机-高级设置：转小写"/>
+			<case name="testCompareRuleWorkSyncBackupAdvanced_turnTheCapital" desc="i2-11257:创建一致性比较-自动从工作机同步到灾备机-高级设置：转大写"/>
+			<case name="testCompareRuleWorkSyncBackupAdvanced_prefix" desc="i2-11255:创建一致性比较-自动从工作机同步到灾备机-高级设置：增加前缀"/>
+			<case name="testCompareRuleWorkSyncBackupAdvanced_suffix" desc="i2-12145:创建一致性比较-自动从工作机同步到灾备机-高级设置：增加后缀"/>
+			<case name="testCompareRuleNotCompareDirectoryAndFile" desc="i2-11253:创建一致性比较-不比较的目录和文件"/>
+			<case name="testCompareRuleTaskRunTimeRerun" desc="i2-11252:创建一致性比较-任务运行时间：重复运行-源端数据为fileopr生成的数据-备端有相同数据"/>
+			<case name="testCompareRuleTaskRunTimeOnlyOnce" desc="i2-11251:创建一致性比较-任务运行时间：只运行一次，预约时间-源端数据为fileopr生成的数据-备端有相同数据"/>
+			<case name="testCompareRuleFileAttributes_sync" desc="i2-11249:创建一致性比较-自动从工作机同步到灾备机-文件安全属性为：同步-源端数据为fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompareRuleFileAttributes_NotSync" desc="i2-11249:创建一致性比较-自动从工作机同步到灾备机-文件安全属性为：不同步-源端用fileopr生成数据"/>
+		</casefile>
+		<subcomp name="i2Service" />
+		<area name="Service" />
+	</component>
+</suite>

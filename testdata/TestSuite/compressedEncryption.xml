@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="copyRuleAutomationTest">
+    <component desc=" base test for copy rule. "
+               name="baseTest">
+        <casefile classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithCompressedEncryption"
+                  desc="test compression encryptioin tabs in a copy rule." name="copyRuleWithCompressedEncryption"
+                  data="testdata/inputData/CopyRuleBaseTest/baseTest.properties">
+            <case name="testCreateCopyRuleWithCompressionLevel0"
+                  desc="i2-11110:创建复制规则-压缩等级为0"/>
+            <case name="testCreateCopyRuleWithCompressionLevel1"
+                  desc="i2-11112:创建复制规则-压缩等级为1"/>
+            <case name="testCreateCopyRuleWithCompressionLevel2"
+                  desc="i2-11113:创建复制规则-压缩等级为2"/>
+            <case name="testCreateCopyRuleWithCompressionLevel3"
+                  desc="i2-12082:创建复制规则-压缩等级为3"/>
+            <case name="testCreateCopyRuleWithCompressionLevel4"
+                  desc="i2-11165:创建复制规则-压缩等级为4"/>
+            <case name="testCopyRuleWithCompressionLevel0WithBigData"
+                  desc=" i2-11354:创建复制规则-压缩等级为0-文件10k*1000000"/>
+            <case name="testCopyRuleWithCompressionLevel1WithBigData"
+                  desc=" i2-11334:创建复制规则-压缩等级为1-文件10k*1000000"/>
+            <case name="testCopyRuleWithCompressionLevel2WithBigData"
+                  desc="i2-11335:创建复制规则-压缩等级为2-文件10k*1000000"/>
+            <case name="testCopyRuleWithCompressionLevel3WithBigData"
+                  desc="  i2-11336:创建复制规则-压缩等级为3-文件10k*1000000"/>
+            <case name="testCopyRuleWithCompressionLevel4WithBigData"
+                  desc=" i2-11338:创建复制规则-压缩等级为4-文件10k*1000000"/>
+            <case name="testModifyCopyRuleWithCompressionLevel0"
+                  desc=" i2-11902:复制规则-修改-复制规则在停止状态-压缩等级为0"/>
+            <case name="testModifyCopyRuleWithCompressionLevel1"
+                  desc="  i2-11885:复制规则-修改-复制规则在停止状态-压缩等级为1"/>
+            <case name="testModifyCopyRuleWithCompressionLevel2"
+                  desc=" i2-11884:复制规则-修改-复制规则在停止状态-压缩等级为2"/>
+            <case name="testModifyCopyRuleWithCompressionLevel3"
+                  desc="i2-11886:复制规则-修改-复制规则在停止状态-压缩等级为3"/>
+            <case name="testModifyCopyRuleWithCompressionLevel4"
+                  desc="i2-11887:复制规则-修改-复制规则在停止状态-压缩等级为4"/>
+            <case name="testCopyRuleWithCompressionLevel0WithOracleFiles"
+                  desc=" i2-11355:创建复制规则-压缩等级为0-oracle文件"/>
+            <case name="testCopyRuleWithCompressionLevel1WithOracleFiles"
+                  desc=" i2-11347:创建复制规则-压缩等级为1-oracle文件"/>
+            <case name="testCopyRuleWithCompressionLevel2WithOracleFiles"
+                  desc=" i2-11348: 创建复制规则-压缩等级为2-oracle文件"/>
+            <case name="testCopyRuleWithCompressionLevel3WithOracleFiles"
+                  desc="i2-11349: 创建复制规则-压缩等级为3-oracle文件"/>
+            <case name="testCopyRuleWithCompressionLevel4WithOracleFiles"
+                  desc=" i2-11350:创建复制规则-压缩等级为4-oracle文件"/>
+            <case name="testBatchModifyCopyRuleWithCompressionLevel0"
+                  desc=" i2-11598:复制规则-批量修改-复制规则在停止状态-压缩等级为0"/>
+            <case name="testBatchModifyCopyRuleWithCompressionLevel1"
+                  desc=" i2-11596:复制规则-批量修改-复制规则在停止状态-压缩等级为1"/>
+            <case name="testBatchModifyCopyRuleWithCompressionLevel2"
+                  desc=" i2-11599:复制规则-批量修改-复制规则在停止状态-压缩等级为2"/>
+            <case name="testBatchModifyCopyRuleWithCompressionLevel3"
+                  desc="i2-11600: 复制规则-批量修改-复制规则在停止状态-压缩等级为3"/>
+            <case name="testBatchModifyCopyRuleWithCompressionLevel4"
+                  desc=" i2-11601:复制规则-批量修改-复制规则在停止状态-压缩等级为4"/>
+
+        </casefile>
+        <subcomp name="i2Service"/>
+        <area name="Service"/>
+    </component>
+</suite>

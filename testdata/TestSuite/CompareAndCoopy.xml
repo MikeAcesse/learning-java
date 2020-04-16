@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="i2up_compareRule">
+	<component desc="Compare and coopy test" name="Compare Rule of i2up">
+		<casefile classname="info2soft.qa.auto.test.CompareRuleTest"
+			desc="test compare rule function"
+			data="testdata/inputData/comparetools/comparerule.properties"
+			name="testCompareRuleFeature">
+			<case name="testTotalFileSize"
+				desc=" test total size of the files " />
+			<case name="testTotalNumberOfFiles"
+				desc=" test total number of the files" />
+			<case name="testMd5ValueOfFiles"
+				desc=" test total md5value of the files" />
+			<case name="testFilesTime"
+				desc=" test the time of all the files" />
+			<case name="testCompToolsWithCreatedCompRule" desc= " 创建一致性比较"/>
+			<case name="testCompToolsByMD5BakNoData" desc= " 创建一致性比较-源端fileopr生成的数据-备端没有数据生成"/>
+			<case name="testCompToolsByMD5SameData" desc= " 创建一致性比较-源端数据为fileopr生成的数据-备端有相同的数据"/>
+			<case name="testCompToolsByMD5MissingBakData" desc= " 创建一致性比较-源端数据为fileopr生成的数据-备端缺失一部分文件"/>
+			<case name="testCompToolsByMD5OverwriteSrcData" desc= " 创建一致性比较-源端数据为fileopr生成的数据-源端数据覆盖"/>
+			<case name="testCompToolsByBakNoData" desc= "创建一致性比较-文件大小+文件修改时间-源端fileopr生成的数据-备端没有数据生成 "/>
+			<case name="testCompToolsBySameData" desc= "创建一致性比较-文件大小+文件修改时间-源端fileopr生成数据-备端有相同数据 "/>
+			<case name="testCompToolsByMissingBakData" desc= "创建一致性比较-文件大小+文件修改时间-源端fileopr生成数据-备端缺失一部分文件 "/>
+			<case name="testCompToolsByOverwriteSrcData" desc= " 创建一致性比较-文件大小+文件修改时间-源端数据为fileopr生成的数据-源端数据覆盖"/>
+		</casefile>
+		<casefile classname="info2soft.qa.auto.test.CopyRuleTest"
+			desc="test copy rule" name="testCopyRule"
+			runafter="testCompareRuleFeature"
+			data="testdata/inputData/i2coopy/coopy.properties">
+	        <case name="testSynDirectory" desc="test sysnchronize directory" />
+		    <case name="testMoveDirectory" desc=" test move directory " />
+			<case name="testMD5SynFiles" desc="test sysnchronize file and verify it by md5." />
+			<case name="testCommonSynFiles" desc="test sysnchronize file and verify it by common way" />
+			<case name="testDeleteFile" desc="test delete file on the source side" />
+			<case name="testSynchronizeBigFile" desc="test big file" />
+			<case name="testRemirrorByMD5" desc="test big file for mirror" />
+			<case name="testRemirrorByTimeVerify" desc="test big file for mirror" />
+			<case name="testDeleteBigFileOnBackupSide" desc=" when delete a above 4G file on the backup side ,i2up synchronize a deleted file from source side to backup side" />
+			<case name="testWriteFileDuringMirror" desc=" When a copy rule is mirrored, the files in the monitor directory are written" />
+		</casefile>
+		<subcomp name="i2Service" />
+		<area name="Service" />
+	</component>
+</suite>

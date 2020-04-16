@@ -1,0 +1,12 @@
+info2soft.qa.auto.pageobject.CompareRulePage.operation,xpath,//div[text()='{0}']/../following-sibling::td[last()]//span[starts-with(text(),'{1}')]
+info2soft.qa.auto.pageobject.CompareRulePage.resultItem,xpath,//label[contains(text(),'{0}')]/following-sibling::div
+info2soft.qa.auto.pageobject.CompareRulePage.total,xpath,//label[contains(text(),'{0}')]/following-sibling::div
+info2soft.qa.auto.pageobject.CompareRulePage.cancelOfCheckConfig,xpath,//span[contains(text(),'{0}')]/../following-sibling::button/span
+info2soft.qa.auto.pageobject.CompareRulePage.fileNameConversion,xpath,//label[contains(text(),'{0}')]/following-sibling::div[1]//span
+info2soft.qa.auto.pageobject.CompareRulePage.noCompareDir,xpath,//span[contains(text(),'{0}')]/following-sibling::button/span
+info2soft.qa.auto.pageobject.CompareRulePage.divInput,xpath,//div[contains(text(),'{0}')]/following-sibling::div//input
+info2soft.qa.auto.pageobject.CompareRulePage.divParentInput,xpath,//div[contains(text(),'{0}')]/parent::div//input
+info2soft.qa.auto.pageobject.CompareRulePage.runTimeRange,xpath,//label[contains(text(),'{0}')]/following-sibling::div/div/div[1]//input
+
+
+

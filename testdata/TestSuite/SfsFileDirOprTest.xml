@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="i2up_nodeManagement">
+    <component desc=" test sfs automation tset " name="sfs">
+        <casefile classname="info2soft.qa.auto.test.SfsFileDirOprTest"
+                  desc="test sfs function"
+                  data="testdata/inputData/sfs/sfs.properties"
+                  name="SfsFileDirOprTest">
+            <case name="testNewFiles" desc="i2-12018:新建文件" />
+            <case name="testMoveFiles" desc="i2-12019:移动文件" />
+            <case name="testModifyFileAttributes" desc="i2-12020:文件属性的修改" />
+            <case name="testRenameFile" desc="i2-12037:文件重命名" />
+            <case name="testNewDirectory" desc="i2-12047:新建目录" />
+            <case name="testDeleteDirectory" desc="i2-12049: 删除目录" />
+            <case name="testMoveFolder" desc="i2-12083: 移动文件夹" />
+            <case name="testPotectedSingleFile" desc="i2-12043:保护单个文件" />
+            <case name="testNewCommonFile" desc="i2-11989:新建普通文件" />
+            <case name="testSrcDirContaisHiddenFiles"
+                  desc="i2-12084: 添加源目录含有隐藏文件" />
+            <case name="testOverlayOrMergeDirectory" desc="i2-12092:覆盖/合并目录" />
+            <case name="testCopyFiles" desc=" i2-12585:复制文件" />
+            <case name="testMoveSoftConnectFile" desc="i2-11986:移动软连接文件"/>
+            <case name="testAddSoftConnectFile" desc="i2-11985:创建软连接文件"/>
+            <case name="testDelHardFile" desc="i2-11984:删除硬链接文件"/>
+            <case name="testEditHardFile" desc="i2-11983:修改硬链接文件属性"/>
+            <case name="testMoveHardFile" desc="i2-11982:移动硬链接文件"/>
+            <case name="testRenameDir" desc="i2-12088:重命名目录"/>
+            <case name="testEditHardContent" desc="i2-11981:修改硬链接文件内容"/>
+            <case name="testCopyFile" desc="i2-12089:复制文件夹"/>
+            <case name="testAddHardFile" desc="i2-11980:新建硬链接文件"/>
+            <case name="testZipFile" desc="i2-12090:压缩解压文件"/>
+            <case name="testDelFile" desc="i2-11979:删除普通文件"/>
+            <case name="testDelDir" desc="i2-12091:删除监控目录"/>
+            <case name="testEditFileContent" desc="i2-11987:编辑文件"/>
+        </casefile>
+        <subcomp name="i2Service"/>
+        <area name="Service"/>
+    </component>
+</suite>

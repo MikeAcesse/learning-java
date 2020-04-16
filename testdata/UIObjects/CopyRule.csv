@@ -1,0 +1,4 @@
+CopyRule.btn.te,id,//div[contains(text(),'{0}'){1}{2}]
+info2soft.qa.auto.pageobject.CopyRulePage.timeRange,xpath,//label[contains(text(),'{0}')]/..//div/label[{1}]/span[1]
+info2soft.qa.auto.pageobject.CopyRulePage.bandWidth,xpath,//label[contains(text(),'{0}')]/../div/div[{1}]//input
+info2soft.qa.auto.pageobject.CopyRulePage.bandWidthAdd,xpath,//label[contains(text(),'{0}')]/../div/button

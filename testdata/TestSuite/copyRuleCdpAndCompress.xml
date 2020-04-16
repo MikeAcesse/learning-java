@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="copyRuleAutomationTest">
+    <component desc=" base test for copy rule. "
+               name="baseTest">
+
+        <!--CDP 设置-->
+        <casefile
+                classname="info2soft.qa.auto.test.copyrule.basetest.copyRuleWithCDPSettings"
+                desc="test cdp settings tabs in a copy rule."
+                data="testdata/inputData/CopyRuleBaseTest/baseTest.properties"
+                name="copyRuleWithCDPSettings">
+<!--            <case name="testCreateCopyRuleWithCdp"-->
+<!--                  desc="i2-11115:创建复制规则-CDP"/>-->
+<!--            <case name="testCreateCopyRuleWithCdp_CreateTranscript"-->
+<!--                  desc="i2-11120:创建复制规则-CDP-创建副本"/>-->
+<!--            <case name="testCreateCopyRuleWithCdp_Packaged"-->
+<!--                  desc="i2-11121:创建复制规则-CDP-打包"/>-->
+<!--            <case name="testCreateCopyRuleWithCdp_GenerationStrategy"-->
+<!--                  desc="  i2-11122: 创建复制规则-CDP-生成策略"/>-->
+            <case name="testModifyCopyRuleWithCdp"
+                  desc="i2-11903:复制规则-修改-打开CDP"/>
+<!--            <case name="testModifyCopyRuleWithCdp_CreateTranscript"-->
+<!--                  desc=" i2-11904:复制规则-修改-CDP-创建副本"/>-->
+<!--            <case name="testModifyCopyRuleWithCdp_Packaged"-->
+<!--                  desc="i2-11905:复制规则-修改-CDP-打包"/>-->
+<!--            <case name="testModifyCopyRuleWithCdp_GenerationStrategy"-->
+<!--                  desc=" i2-11906:复制规则-修改-CDP-生成策略"/>-->
+<!--            <case name="testBatchMoidifyCopyRuleWith_SaveDays"-->
+<!--                  desc="i2-11630:复制规则-批量修改-复制规则在停止状态-CDP保留天数为10"/>-->
+<!--            <case name="testBatchMoidifyCopyRuleWith_RetainNumber"-->
+<!--                  desc="i2-11631:复制规则-批量修改-复制规则在停止状态-CDP保留个数为10"/>-->
+<!--            <case name="testBatchModifyCopyRuleWithCdp_CreateTranscript"-->
+<!--                  desc="i2-11633:复制规则-批量修改-复制规则在停止状态-CDP中Baseline创建副本"/>-->
+<!--            <case name="testBatchModifyCopyRuleWithCdp_MultipleGenerationStrategy"-->
+<!--                  desc=" i2-11636:复制规则-批量修改-复制规则在停止状态-CDP中Baseline创建多个策略"/>-->
+
+        </casefile>
+
+
+        <subcomp name="i2Service"/>
+        <area name="Service"/>
+    </component>
+</suite>

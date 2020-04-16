@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="i2up_nodeManagement">
+    <component desc=" test sfs automation tset " name="sfs">
+        <casefile classname="info2soft.qa.auto.test.SfsAutomationTest"
+                  desc="test sfs function"
+                  data="testdata/inputData/sfs/sfs.properties"
+                  name="sfsAutomation">
+            <case name="testMountThenSfs" desc="i2-7989:先mount后sfs和先sfs再使用mount挂载是否正常"/>
+            <case name="testfioTestTools" desc="i2-7995:使用fio测试工具测试"/> 
+            <case name="testFileOverwriteDataCapture" desc="i2-7984:文件覆盖数据捕获"/>
+            <case name="testSetInsmodsfsValue" desc="i2-7997:insmodsfs值设置"/>
+            <case name="testMountNFSOnBk" desc="i2-7996:备端挂载NFS文件系统"/>
+            <case name="addBigFile_10G" desc=" i2-7982:大文件创建数据捕获"/>
+            <case name="sfsCapture" desc="i2-7990:多规则监控同目录下，sfs捕获是否正常"/>
+            <case name="mirrorORCopy" desc="i2-7991:配置好监控目录和复制规则后，在镜像阶段和复制阶段，多进程写入数据，脚本需要同时执行"/>
+            <case name="addTwoCopyRule" desc="i2-8000:创建2条监控目录和灾备目录一样的规则"/>
+            <case name="delCopyRule" desc="i2-8001:删除复制规则"/>
+            <case name="nfsRun" desc="i2-8002:nfs3和nfs4同时运行"/>
+            <case name="mount_nfs" desc="i2-7979:挂载nfs后重启工作机"/>
+            <case name="sfsMountNfs" desc="i2-7978:sfs挂接在nfs父目录"/>
+            <case name="deepDirCapture" desc="i2-7981:深层目录捕获"/>
+        </casefile>
+        <subcomp name="i2Service"/>
+        <area name="Service"/>
+    </component>
+</suite>

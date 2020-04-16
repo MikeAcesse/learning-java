@@ -1,0 +1,14 @@
+{
+    "action": "generate_license",
+    "feature": 
+        {
+            "coopy": 
+                {
+                    "vmNum": 80
+                },
+            "cdp":
+            {
+                "vmNum": 80
+            }
+        }
+}

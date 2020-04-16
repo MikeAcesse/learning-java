@@ -1,0 +1,14 @@
+# 节点新建-基本设置
+info2soft.qa.auto.pageobject.NodeManagementPage.authBtn,xpath,//label[contains(text(),'{0}')]/following-sibling::div[1]//button/span[contains(text(),'{1}')]
+info2soft.qa.auto.pageobject.NodeManagementPage.note,xpath,//label[contains(text(),'{0}')]/following-sibling::div[1]//textarea
+info2soft.qa.auto.pageobject.NodeManagementPage.cancelBtn,xpath,//div[contains(@class,'el-message-box__btns')]//button[1]
+info2soft.qa.auto.pageobject.NodeManagementPage.totalQuantity,xpath,//p[contains(text(),'总数')]/preceding-sibling::div[1]/div
+info2soft.qa.auto.pageobject.NodeManagementPage.memoryUsageLimit,xpath,//div[contains(@class,'el-form-item__error')]
+info2soft.qa.auto.pageobject.NodeManagementPage.authFailure,xpath,//label[contains(text(),'{0}')]/following-sibling::div/div[last()]
+info2soft.qa.auto.pageobject.NodeManagementPage.div,xpath,//div[contains(@class,'el-table__body-wrapper')]
+#节点监控设置
+info2soft.qa.auto.pageobject.NodeManagementPage.monitorSettingTab,xpath,//div[@id='tab-third']
+info2soft.qa.auto.pageobject.NodeManagementPage.blockReplicationTab,xpath,//div[@id='tab-fourth']
+info2soft.qa.auto.pageobject.NodeManagementPage.totalNumber,xpath,//p[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.NodeManagementPage.noteLabel,xpath,//label[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.NodeManagementPage.copyPathButton,xpath,//span[contains(text(),'{0}')]/../../../div[3]/button[2]/span

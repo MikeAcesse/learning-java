@@ -1,0 +1,14 @@
+ #修改密码
+info2soft.qa.auto.pageobject.locator.AccountInformationPageLocator.modifyPasswordTabStr,xpath,//div[contains(text(),'{0}')]
+#旧密码   
+info2soft.qa.auto.pageobject.locator.AccountInformationPage.oldPasswordLocator,xpath,//label[contains(text(),'{0}')]/following-sibling::div//input
+#确认密码
+info2soft.qa.auto.pageobject.locator.AccountInformationPage.confirmOldPasswordLocator,xpath,//label[contains(text(),'{0}')]/following-sibling::div//input
+#密码
+info2soft.qa.auto.pageobject.locator.AccountInformationPagePasswordLocator,xpath,//label[text()='{0}']/following-sibling::div//input
+#重置
+info2soft.qa.auto.pageobject.locator.AccountInformationPageLocator.resetBtnLocator,xpath, //span[text()='{0}']
+#修改
+info2soft.qa.auto.pageobject.locator.AccountInformationPageLocator.modifyBtnLocator,xpath, //span[text()='{0}']/../preceding-sibling::button/span
+
+info2soft.qa.auto.pageobject.locator.AccountInformationPageLocator.differentPwd,xpath, //div[contains(text(),'{0}')]

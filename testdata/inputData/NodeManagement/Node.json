@@ -1,0 +1,61 @@
+{
+    "Node":
+        {
+            "node1": 
+                {
+                    "port": "26821",
+                    "user": "root",
+                    "pwd": "123456",
+                    "license": "coopy",
+                    "includePath":"/",
+                    "note": "node1 xyz"
+                },
+            "node2":
+                {
+                    "port": "26821",
+                    "user": "root",
+                    "pwd": "123456",
+                    "license": "coopy",                    
+                    "includePath":"/", 
+                    "note": "node2 xyz"
+                }
+        },
+    "CopyRule":
+        {
+            "copyRule1":
+                {
+                    "srcNode": "node1",
+                    "backupNode": "node2",
+                    "mapType": "多对一",
+                    "srcDir": "/root/work/test/monitor/",
+                    "backupDir": "/root/work/test/monitor/backup",
+                    "unmonitoredDir":"/root/work/test/unmonitor/"
+                },
+             "copyRule2":
+                {
+                    "srcNode": "node1",
+                    "backupNode": "node2",
+                    "mapType": "一对一",
+                    "srcDir": "/root/work/test/monitor/",
+                    "backupDir": "/root/work/test/monitor/",
+                    "unmonitoredDir":"/root/work/test/unmonitor/"
+                }
+        },
+    "CompareRule":
+        {    
+              "compareRule1":
+                {
+                    "srcNode": "node1",
+                    "backupNode": "node2",
+                    "srcDir": "/root/work/test/monitor/",
+                    "backupDir": "/root/work/test/monitor/backup"
+                },
+              "compareRule2":
+                {
+                    "srcNode": "node1",
+                    "backupNode": "node2",
+                    "srcDir": "/root/work/test/monitor/",
+                    "backupDir": "/root/work/test/monitor/backup"
+                }
+         }    
+}

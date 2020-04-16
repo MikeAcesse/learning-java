@@ -1,0 +1,1 @@
+info2soft.qa.auto.pageobject.DataManagementPage.enter,xpath,//button[contains(text(),'{0}')]

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="copyRuleAutomationTest">
+    <component desc=" Business group management test "
+               name="businessGroupManagementTest">
+        <subcomp name="i2Service"/>
+        <area name="Service"/>
+        <casefile classname="info2soft.qa.auto.test.businessmanagement.basetest.BusinessManagementTest"
+                  desc="test bussiness group managemnet for copy rules." name="BusinessManagementTest"
+                  data="testdata/inputData/BusinessGroupManagement/businessGroup.properties">
+
+                        <case name="testCreateCopyRuleWithBusinessGroup" desc="i2-11095:创建复制规则业务组"/>
+                        <case name="testModifyCopyRuleWithBusinessGroup" desc="i2-11655:复制规则-修改-复制规则停止状态-业务组"/>
+                        <case name="testCreateCopyRuleWithNodeGroup" desc="i2-11096:创建复制规则-添加节点组"/>
+                        <case name="testCreateCopyRuleWithWKBKInDifferentNodeGroup" desc="i2-11323:创建复制规则-工作机和灾备机处于不同节点组"/>
+                        <case name="testCreateCopyRuleWithWKBKInSameNodeGroup" desc="i2-11324:创建复制规则-工作机和灾备机处于相同节点组"/>
+                        <case name="testCreateCopyRuleWithoutNodeGroup" desc="i2-11326:创建复制规则-工作机和灾备机处于不同节点组-不进行设置"/>
+                        <case name="testCreateMultipleCopyRuleWithOneSameGroup" desc="i2-11320:创建复制规则-多个复制规则添加同一个业务组"/>
+                        <case name="testCreatCopyRuleWithMultipleBusinessGroup" desc="i2-11321:创建复制规则-多个业务组"/>
+                        <case name="testCreatCopyRuleWithoutAddingBusinessGroup" desc="i2-11322:创建复制规则-不添加业务组"/>
+                        <case name="testFilterCopyRuleGroupAndName"
+                              desc="i2-11363:创建复制规则-多个复制规则添加同一个业务组并过滤名称"/>
+                        <case name="testFilterCopyRuleGroupAndWkName"
+                              desc="i2-11364:创建复制规则-多个复制规则添加同一个业务组并过滤工作节点名称"/>
+                        <case name="testFilterCopyRuleGroupAndBkName"
+                              desc=" i2-11365:创建复制规则-多个复制规则添加同一个业务组并过滤备份节点名称"/>
+                        <case name="testFilterMultipleCopyRuleByMultipleBusinessGroupAndName"
+                              desc="i2-11366:创建复制规则-多个业务组过滤名称"/>
+                        <case name="testFilterMultipleCopyRuleByMultipleBusinessGroupAndWkName"
+                              desc="i2-11367:创建复制规则-多个业务组过滤工作节点名称"/>
+                        <case name="testFilterMultipleCopyRuleByMultipleBusinessGroupAndBkName"
+                              desc="i2-11368:创建复制规则-多个业务组过滤备份节点名称"/>
+                        <case name="testFilterMultipleCopyRuleByName"
+                              desc="i2-11356:复制规则-根据名称过滤多个规则"/>
+                        <case name="testFilterSingleCopyRuleByName"
+                              desc="i2-11357:复制规则-根据名称过滤单个规则"/>
+                        <case name="testFilterMultipleCopyRuleByBkNodeName"
+                              desc="i2-11361:复制规则-根据备份节点过滤多个规则"/>
+                        <case name="testFilterMultipleCopyRuleByWkNodeName"
+                              desc="i2-11358:复制规则-根据工作机节点过滤多个规则"/>
+                        <case name="testFilterSingleCopyRuleByBkNodeName"
+                              desc="i2-11361:复制规则-根据备份节点过滤多个规则"/>
+                        <case name="testFilterSingleCopyRuleByWkNodeName"
+                              desc="i2-11360:复制规则-根据工作机节点过滤单个规则"/>
+
+        </casefile>
+    </component>
+</suite>

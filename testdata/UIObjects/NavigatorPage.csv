@@ -1,0 +1,4 @@
+info2soft.qa.auto.pageobject.NavigatorPage.navigate,xpath,//aside/div/div/*[name()='svg'][1]
+info2soft.qa.auto.pageobject.NavigatorPage.copyRule,xpath,//aside/div/ul/li[5]/ul/li[1]
+info2soft.qa.auto.pageobject.NavigatorPage.spanSvg,xpath,//span[contains(text(),'{0}')]/preceding-sibling::*[name()='svg'][1]
+info2soft.qa.auto.pageobject.NavigatorPage.menubar,xpath,//ul[contains(@role,'menubar')]

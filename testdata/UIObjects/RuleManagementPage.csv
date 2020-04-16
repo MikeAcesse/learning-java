@@ -1,0 +1,19 @@
+#info2soft.qa.auto.pageobject.RuleManagementPage.mirrorSetup,xpath,//div[contains(text(),'{0}')]  
+#info2soft.qa.auto.pageobject.RuleManagementPage.timeVerify,xpath,//span[contains(text(),'{0}')]
+#info2soft.qa.auto.pageobject.RuleManagementPage.mirrorConfirm,xpath,//span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.RuleManagementPage.AllSelect,xpath,//div[contains(text(),'{0}')]/../preceding-sibling::th//label
+info2soft.qa.auto.pageobject.RuleManagementPage.action,xpath,//div[@class='table-footer']//span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.RuleManagementPage.DialogCancel,xpath,//span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.RuleManagementPage.DialogDeleteBackUp,xpath,//input[contains(@class,'el-switch__input')]/following-sibling::span
+info2soft.qa.auto.pageobject.RuleManagementPage.oneRuleAction,xpath,//div[contains(text(),'{0}')]/../following-sibling::td[last()]//span[contains(text(),'{1}')] 
+info2soft.qa.auto.pageobject.RuleManagementPage.tr,xpath,//div[contains(@class,'el-table__body-wrapper is-scrolling-none')]/table/tbody/tr
+info2soft.qa.auto.pageobject.RuleManagementPage.input,xpath,//div[contains(@id,'pane-seventh')]//span[contains(text(),'{0}')]/preceding-sibling::span//input
+info2soft.qa.auto.pageobject.RuleManagementPage.selectPage,xpath,//div[contains(@class,'el-tab-pane')]/div/div/div[3]/div//div[contains(@class,'el-select el-select--mini')]//input
+info2soft.qa.auto.pageobject.RuleManagementPage.logGradeSelectPage,xpath,//span[contains(text(),'{0}')]/../div//input
+info2soft.qa.auto.pageobject.RuleManagementPage.openTime,xpath,//span[contains(text(),'{0}')]/../../..//input[1]
+info2soft.qa.auto.pageobject.RuleManagementPage.selectLiPage,xpath,//div[contains(@class,'el-tab-pane')]//div[contains(@class,'table-footer')]/div/ul/li['{0}']
+info2soft.qa.auto.pageobject.RuleManagementPage.moreSelectPage,xpath,//div[contains(@class,'el-select el-select--mini')]//input
+info2soft.qa.auto.pageobject.RuleManagementPage.moreSelectLiPage,xpath,//div[contains(@class,'table-footer')]/div/ul/li[{0}]
+info2soft.qa.auto.pageobject.RuleManagementPage.sizeColumn,xpath,//div[contains(@class,'cell')]
+info2soft.qa.auto.pageobject.RuleManagementPage.pathConfirmBtn,xpath,//span[contains(text(),'{0}')]/../following-sibling::button[1]//span[contains(text(),'{1}')]
+info2soft.qa.auto.pageobject.RuleManagementPage.selectTime,xpath,//div[contains(@class, 'time-spinner')]

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="i2up">
+	<component desc="Coopy rule test" name="Coopy Rule of i2up">
+		<casefile classname="info2soft.qa.auto.test.SecurityConfigTest"
+			desc="test copy rule" name="testCopyRule"
+			data="testdata/inputData/i2coopy/coopy.properties">
+			<!-- <case name="testDeleteFile"	desc="teste on the source side" /> -->
+			<case name="testToggle"	desc="teste on the source side" />
+			<case name="testInputOne" desc="teste on the source side" />
+			<case name="testInputTwo" desc="teste on the source side" />
+			<case name="testLimitPsw" desc="teste on the source side" />
+			<case name="testInputThree"	desc="teste on the source side" />
+			<case name="testInputFour"	desc="teste on the source side" />
+			<case name="testSaveButton"	desc="teste on the source side" />
+		</casefile> 
+		<subcomp name="i2Service" />
+		<area name="Service" />
+	</component>
+</suite>

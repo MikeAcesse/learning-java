@@ -1,0 +1,4 @@
+info2soft.qa.auto.pageobject.LoginPage.loginDiv,xpath,//div[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.LoginPage.loginBtn,xpath,//button/span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.LoginPage.inputs,xpath,//input
+info2soft.qa.auto.pageobject.LoginPage.migrateApiLink,id,migrate

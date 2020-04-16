@@ -1,0 +1,124 @@
+{
+    "Node": {
+        "node1": {
+            "port": "26821",
+            "user": "root",
+            "pwd": "123456",
+            "license": "coopy",
+            "includePath": "/",
+            "note": "node1 xyz"
+        },
+        "node2": {
+            "port": "26821",
+            "user": "root",
+            "pwd": "123456",
+            "license": "coopy",
+            "includePath": "/",
+            "note": "node2 xyz"
+        }
+    },
+    "CopyRule": {
+        "copyRule1": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "多对一",
+            "srcDir": "/root/work/test/monitor/",
+            "backupDir": "/root/work/test/monitor/backup/",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule2": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "一对一",
+            "srcDir": "/root/work/test/monitor/",
+            "backupDir": "/root/work/test/monitor/backup/",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule3": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "一对一",
+            "srcDir": "/root/work/test/monitor/",
+            "backupDir": "/root/work/test/monitor/backup/ctt/test2",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule4": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "多对一",
+            "srcDir": "/root/work/test/monitor/sfstest/",
+            "backupDir": "/root/work/test/monitor/backup/",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule5": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "一对一",
+            "srcDir": "/root/work/test/monitor/",
+            "backupDir": "/root/work/test/monitor/backup/data",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule6": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "一对一",
+            "srcDir": "/root/work/test/monitor/",
+            "backupDir": "/root/work/test/monitor/backup/sfs",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule-7996m": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "多对一",
+            "srcDir": "/root/work/test/monitor/i2-7996/aaaa2/,/root/work/test/monitor/i2-7996/aaaa3/,/root/work/test/monitor/i2-7996/aaaa4/",
+            "backupDir": "/root/work/test/mount/i2-7996/backup/",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule-7996o": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "一对一",
+            "srcDir": "/root/work/test/monitor/i2-7996/aaaa1/",
+            "backupDir": "/root/work/test/mount/i2-7996/aaaa1/",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule7": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "一对一",
+            "srcDir": "/root/work/test/monitor/data/",
+            "backupDir": "/root/work/test/monitor/backup/data/",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule-12083": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "一对一",
+            "srcDir": "/root/work/test/monitor/,/root/work/test/monitor1/",
+            "backupDir": "/root/work/test/monitor/backup/,/root/work/test/monitor1/backup/",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        },
+        "copyRule-12209": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "mapType": "一对一",
+            "srcDir": "/root/work/test/monitor/,/root/work/test/monitor1/",
+            "backupDir": "/root/work/test/monitor/backup/,/root/work/test/monitor1/backup/",
+            "unmonitoredDir": "/root/work/test/unmonitor/"
+        }
+    },
+    "CompareRule": {
+        "compareRule1": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "srcDir": "/root/work/test/monitor/i2-7996/aaaa1/,/root/work/test/monitor/i2-7996/aaaa2/,/root/work/test/monitor/i2-7996/aaaa3/,/root/work/test/monitor/i2-7996/aaaa4/",
+            "backupDir": "/root/work/test/mount/i2-7996/aaaa1/,/root/work/test/mount/i2-7996/backup/root/work/test/monitor/i2-7996/aaaa2/,/root/work/test/mount/i2-7996/backup/root/work/test/monitor/i2-7996/aaaa3/,/root/work/test/mount/i2-7996/backup/root/work/test/monitor/i2-7996/aaaa4/"
+        },
+        "compareRule2": {
+            "srcNode": "node1",
+            "backupNode": "node2",
+            "srcDir": "/root/work/test/monitor/",
+            "backupDir": "/root/work/test/monitor/backup/"
+        }
+    }
+}

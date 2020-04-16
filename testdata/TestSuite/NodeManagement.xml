@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite desc="suite for i2up" name="i2up_nodeManagement">
+	<component desc=" test node management "
+		name="node_Management_of_i2up">
+		<casefile
+		 classname="info2soft.qa.auto.test.NodeManagementTest"
+			desc="test node management function"
+			data="testdata/inputData/NodeManagement/Node.properties"
+			name="NodeManagementTest">
+			<case name="testCreateNodeWithMonitorSetting"
+				desc="i2-11296:添加节点-监控设置" />
+		 	<case name="testCreateNodeWithModifyDir"
+				desc="i2-11297:添加节点-监控设置-更改分析数据目录" />
+			<case name="testCreateNodeWithMonitorDelay"
+				desc=" i2-11298:添加节点-监控设置-更改监控延迟为0s" />
+			<case name="testCreateNodeWithMonitorDataRetention"
+				desc=" i2-11299:添加节点-监控设置-更改监控数据保留为0" />
+			<case name="testCreateNodeWithAnalysisDataRetention"
+				desc="i2-11300:添加节点-监控设置-更改分析数据保留为0" />
+			<case name="testCreateNodeWithBlockReplication"
+				desc=" i2-11301:添加节点-块复制设置-作为块复制节点" />
+			<case name="testCreateNodeWithStartISCSI"
+				desc="i2-11302:添加节点-块复制设置-开启ISCSI服务" />
+			<case name="testCreateNodeWithISCSIAsTarget"
+				desc="i2-11303:添加节点-块复制设置-开启ISCSI服务，作为ISCSI目标端" />
+			<case name="testCreateNodeAndAddLicense"
+				desc="i2-11307:添加节点-添加license" />
+			<case name="testdeleteOneNode" desc="i2-11309:删除单个节点" />
+			<case name="testdeleteMutipleNodes" desc=" i2-11310: 删除多个节点" />
+		    <case name="testAddSecondAuth" desc=" i2-11428: 添加节点-监控设置-第二次认证" />
+			<case name="testAddNewNode" desc="i2-11707:添加节点-new" />
+			<case name="addNodeRepeatedName" desc="添加节点-名称重复" />
+			<case name="addNodePassCertification" desc="添加节点-认证通过" />
+			<case name="addNodePassNoCertification" desc="添加节点-认证不通过" />
+			<case name="addNodeAddressNoAccordance" desc="添加节点-数据地址与管理地址不一致" />
+			<case name="addNodeDataCache" desc="添加节点-数据缓存目录" />
+			<case name="addNodeMemoryLimitZero" desc="添加节点-内存使用上限为0" />
+			<case name="addNodeLogDirectory" desc="添加节点-日志目录" />
+			<case name="addNodeDiskUsageLimitZero" desc="添加节点-磁盘使用上限为0" />
+			<case name="addNodeDiskUsageLimit_256" desc="添加节点-磁盘使用上限为256" />
+			<case name="addNodeMemoryLimit_256" desc="添加节点-内存使用上限为256" />
+			<case name="addNodeCopyPath" desc="添加节点-没有勾选复制路径" />
+			<case name="addNodeNoLicense" desc="添加节点-没有添加license" />
+			<case name="addNodeSafetyMonitoring" desc="添加节点-开启安全检测" />
+		</casefile>
+		<subcomp name="i2Service" />
+		<area name="Service" />
+	</component>
+</suite>

@@ -1,0 +1,30 @@
+info2soft.qa.auto.pageobject.CommonPage.basicTab,xpath,//div[@id='tab-first']
+info2soft.qa.auto.pageobject.CommonPage.spanText,xpath,//span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.liText,xpath,//li[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.divText,xpath,//div[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.labelText,xpath,//label[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.labelSpanText,xpath,//label/span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.labelDivInput,xpath,//label[contains(text(),'{0}')]/following-sibling::div[1]//input
+info2soft.qa.auto.pageobject.CommonPage.divTextSpan,xpath,//div[contains(text(),'{0}')]/../following-sibling::td[1]/div/div/span
+info2soft.qa.auto.pageobject.CommonPage.dropDownSelect,xpath,//div[contains(@class, 'select-dropdown')]
+info2soft.qa.auto.pageobject.CommonPage.dropDownList,tagName,span
+info2soft.qa.auto.pageobject.CommonPage.manulInputBtn,xpath,//div[starts-with(@style,'z-index') and not (contains(@style,'display'))]//span/button[2]/span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.manulInputPathTextarea,xpath,//p[contains(text(),'{0}')]/following-sibling::div[1]/textarea
+info2soft.qa.auto.pageobject.CommonPage.backupDirConfirmBtn,xpath,//span/button[3]/span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.srcDirConfirmBtn,xpath,//span/button[4]/span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.manulInputConfirmBtn,xpath,//div[contains(@aria-label, '{0}')]/div[3]/span/button[contains(@class,'primary')]/span[contains(text(),'{1}')]
+info2soft.qa.auto.pageobject.CommonPage.backupPathInput,xpath,//table//input
+info2soft.qa.auto.pageobject.CommonPage.div,xpath,//div[contains(@class,'el-table__body-wrapper is-scrolling-none')]/table/tbody
+info2soft.qa.auto.pageobject.CommonPage.action,xpath,//div[@class='table-footer']//span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.CommonPage.oneAction,xpath,//div[contains(@class,'el-table__body-wrapper is-scrolling-none')]//tbody//div[contains(text(),'{0}')]/../following-sibling::td[last()]//span[contains(text(),'{1}')]
+info2soft.qa.auto.pageobject.CommonPage.alertTips,xpath,//div[contains(@role,'alert')]//p
+info2soft.qa.auto.pageobject.CommonPage.labelDivSpan,xpath,//label[contains(text(),'{0}')]/following-sibling::div//span
+info2soft.qa.auto.pageobject.CommonPage.alertDialogConfirmBtn,xpath,//div[starts-with(@style,'z-index') and not (contains(@style,'display'))]//div[contains(@aria-label,'{0}')]//div[3]//span[contains(text(),'{1}')]
+info2soft.qa.auto.pageobject.CommonPage.labelDiv,xpath,//label[contains(text(),'{0}')]/following-sibling::div
+info2soft.qa.auto.pageobject.CommonPage.AllSelect,xpath,//div[contains(text(),'{0}')]/../preceding-sibling::th//label
+info2soft.qa.auto.pageobject.CommonPage.DialogConfirm,xpath,//div[contains(@aria-label,'{0}') and not (contains(@style,'display'))]//span[contains(text(),'{1}')]
+info2soft.qa.auto.pageobject.CommonPage.divTrTdSpan,xpath,//div[contains(text(),'{0}')]/../../td[{1}]//div/span
+info2soft.qa.auto.pageobject.CommonPage.dataTable,xpath,//div[contains(@class,'is-scrolling') and (contains(@style,'height'))]/table
+info2soft.qa.auto.pageobject.CommonPage.statusColumn,xpath,//span[contains(@class,'el-tooltip item')]
+info2soft.qa.auto.pageobject.CommonPage.dialog,xpath,//div[contains(@role,'dialog')]
+info2soft.qa.auto.pageobject.CommonPage.headTable,xpath,//div[contains(@class,'head')]/table

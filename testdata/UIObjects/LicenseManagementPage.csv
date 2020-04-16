@@ -1,0 +1,6 @@
+info2soft.qa.auto.pageobject.LicenseManagementPage.textarea,xpath,//div/textarea
+info2soft.qa.auto.pageobject.LicenseManagementPage.checkBtn,xpath,//div[text()='{0}']/../..//button/span[contains(text(),'{1}')]
+info2soft.qa.auto.pageobject.LicenseManagementPage.closeBtn,xpath,//span[contains(text(),'{0}')]/following-sibling::button[1]/i
+info2soft.qa.auto.pageobject.LicenseManagementPage.refreshBtn,xpath,//div/button[2]/span[contains(text(),'{0}')]
+info2soft.qa.auto.pageobject.LicenseManagementPage.nodeStatus,xpath,//div[contains(text(),'{0}')]/../../td[5]/div/p
+info2soft.qa.auto.pageobject.LicenseManagementPage.nodeCheckBox,xpath,//div[contains(text(),'{0}')]/../..//input
