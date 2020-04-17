@@ -23,6 +23,7 @@ public class TestIO {
 	@Test
 	public void testPrintStream(){
 		System.out.println("fanzhikang");
+		System.out.println("mikefan");
 	}
 
 }
