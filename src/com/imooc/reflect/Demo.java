@@ -24,7 +24,5 @@ public class Demo <T extends  Animal> {
 	public void print(){
 		System.out.println("T 的类型是： "+obj.getClass().getName());
 	}
-	public void print1(){
-		System.out.println("T 的类型是： "+obj.getClass().getName());
-	}
+
 }
