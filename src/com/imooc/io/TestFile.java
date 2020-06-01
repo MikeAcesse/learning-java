@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 public class TestFile {
 	public static void main(String[] args) throws IOException {
-		File currentDir = new File("./src/com");
+		File currentDir = new File(".");
 		listDir(currentDir.getCanonicalFile());
 
 	}
@@ -22,6 +22,16 @@ public class TestFile {
 			     ) {
 				System.out.println(f.getName());
 
+			}
+			System.out.println("*********f.getAbsolutePath()*******************");
+			for (File f : fs
+			     ) {
+				System.out.println(f.getAbsolutePath());
+			}
+			System.out.println("***********f.getPath()*****************");
+			for (File f : fs
+			) {
+				System.out.println(f.getPath());
 			}
 		}
 	}
