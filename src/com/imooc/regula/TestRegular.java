@@ -97,4 +97,19 @@ public class TestRegular {
 		}
 		System.out.println("捕获个数:groupCount()="+m.groupCount());
 	}
+
+	@Test
+	public void test6(){
+		String s="3.5MB/s,45KB/s";
+
+		Matcher m = Pattern.compile("([0-9]*[.]?[0-9]*)").matcher(s);
+		while(m.find())
+		{
+			System.out.println("m.group():"+m.group()); //打印一个大组
+
+			System.out.println("m.group(0):"+m.group(0));
+			System.out.println();
+		}
+		System.out.println("捕获个数:groupCount()="+m.groupCount());
+	}
 }
